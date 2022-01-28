@@ -8,7 +8,7 @@ MAINTAINER "[riftbit] ErgoZ <ergozru@gmail.com>"
 
 ARG BUILD_DATE
 ARG VCS_REF
-ARG VERSION=2.2
+ARG VERSION=2.2.1
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
 	org.label-schema.name="DLNA Serviio Container" \
