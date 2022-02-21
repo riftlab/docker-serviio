@@ -185,7 +185,8 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/v3.11/community" >> /etc/apk/repo
 	touch /opt/serviio/log/serviio.log && \
 	rm -rf ${DIR} && \
 	apk del --purge .build-dependencies && \
-	rm -rf /var/cache/apk/*
+	rm -rf /var/cache/apk/* && \
+	sed -i 's#^JAVA_OPTS="#JAVA_OPTS="$JAVA_OPTS #' /opt/serviio/bin/serviio.sh
 
 
 
