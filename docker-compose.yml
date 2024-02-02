@@ -2,11 +2,12 @@ version: '2'
 
 services:
   serviio:
-    image: riftbit/docker-serviio:latest
+    image: soerentsch/serviio:latest
     ports:
-     - "23423:23423/tcp"
-     - "8895:8895/tcp"
      - "1900:1900/udp"
+     - "8895:8895/tcp"
+     - "23423:23423/tcp"
+     - "23424:23424/tcp"
     volumes:
      - /srv/docker/serviio/library:/opt/serviio/library
      - /srv/docker/serviio/plugins:/opt/serviio/plugins
